@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+$primary-color: #000;
+$secondary-color: #fff;
+
+@mixin center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+$font-sizes: (
+    'small': 14.4px,
+    'medium': 17.6px,
+    'extra-large': 64px,
+    )

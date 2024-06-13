@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
-
-/*RESET CSS*/
-
 * {
   padding: 0;
   margin: 0;
@@ -16,13 +13,35 @@ img {
   width: 100%;
 }
 
-/* HEADER */
-.navbar {
-  background-color: #080808;
+.title-page {
+  padding: 5rem 0 1rem 1rem;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-ul li a {
-  font-family: "Roboto Mono", monospace;
+.title-page-style {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 750px) {
+  .data-form {
+    width: 100%;
+  }
+  footer {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  tr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.navbar {
+  background-color: #000;
 }
 
 .logo-nav {
@@ -32,55 +51,8 @@ ul li a {
   margin-right: 5.6px;
 }
 
-/* BANNER */
-
-.banner-img {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-image: url("../images/bannerlvb.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  color: #fff;
-  grid-area: banner-img;
-}
-
-.name-banner {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  font-size: 64px;
-}
-
-/*BIO */
-
-.bio-text {
-  line-height: 1.5;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  background-color: #000;
-  color: #fff;
-}
-
-.bio-img {
-  display: flex;
-  padding: 32px;
-  justify-content: center;
-  align-items: center;
-  background-color: #000;
-  color: #fff;
-}
-
-.text-bio-01 {
-  padding: 1rem 1rem 0 1rem;
-}
-
-.text-bio-02 {
-  padding: 0 1rem 0 1rem;
+ul li a {
+  font-family: "Roboto Mono", monospace;
 }
 
 .footer {
@@ -92,10 +64,6 @@ ul li a {
   align-items: center;
   background-color: #000;
   color: #fff;
-}
-
-.copy {
-  text-align: center;
 }
 
 .socials-footer {
@@ -112,25 +80,72 @@ ul li a {
   filter: grayscale(100);
 }
 
-/*DISCOGRAFÍA*/
-
-.title-page {
-  padding: 5rem 0 1rem 1rem;
-  text-transform: uppercase;
+.copy {
   text-align: center;
 }
 
-.title-page-style {
-  font-family: "Rubik", sans-serif;
-  font-weight: 700;
+.title-page-contact {
+  padding: 5rem 0 1rem 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
 }
 
-.container-disco {
-  background-image: url("../images/discografia-fondo.jpg");
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 110vh;
+  color: #fff;
+  background-image: url("../images/fondoContact.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  padding: 1rem;
+}
+
+.data-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 25rem;
+}
+
+.data-form-textarea, .data-form input, .btn-enviar, .data-form label {
+  margin: 0.25rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.data-form input,
+.data-form textarea,
+.btn-enviar {
+  border: 0px solid #fff;
+  border-radius: 10px;
+  width: 100%;
+  padding: 0.5rem;
+  box-shadow: 5px 10px 10px rgba(82, 82, 82, 0.489);
+}
+
+.btn-enviar {
+  height: 2.5rem;
   color: #fff;
+  background-color: #000;
+}
+
+.btn-enviar:active {
+  background-color: #000;
+  box-shadow: 2.5px 5px 5px rgba(82, 82, 82, 0.489);
+  transform: translateY(2px);
+}
+
+.hr-contact {
+  color: #fff;
+  border: solid 0.5px;
+  width: 90%;
+  margin: 0.5rem 0 0.5rem;
 }
 
 .albums-background {
@@ -146,13 +161,11 @@ ul li a {
   padding-bottom: 2rem;
   width: 100%;
 }
-
 .albums div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .albums div iframe {
   margin: 1rem;
   width: auto;
@@ -160,60 +173,71 @@ ul li a {
   box-shadow: 5px 10px 10px #000;
 }
 
-/* TOUR */
-
-.subtitle {
-  font-family: "Rubik", sans-serif;
-  font-weight: bold;
-}
-
-table {
-  padding: 2rem 2rem 2rem 2rem;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  min-height: 73vh;
-}
-
-table tr {
-  border-top: 0.25px solid #fff;
-  border-bottom: 0.25px solid #fff;
-}
-
-table tr th {
-  padding: 1rem 2rem 1rem 2rem;
-  text-transform: uppercase;
-  font-size: 17.5px;
+.container-disco {
+  background-image: url("../images/discografia-fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   color: #fff;
 }
 
-.tour-background {
-  background-image: linear-gradient(#000, #393939);
-  color: #fff;
+.banner-img {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.btn-comprar {
+  justify-content: center;
+  align-items: center;
+  font-size: 64px;
+  text-align: center;
   font-weight: bold;
-  color: #000;
-  background-color: #fff;
-  border: 0px solid #fff;
-  border-radius: 10px;
-  padding: 0.4rem;
+  background-image: url("../images/bannerlvb.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  grid-area: banner-img;
 }
 
-.btn-comprar:hover {
+.name-banner {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+}
+
+.bio-img {
+  display: flex;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #000;
   color: #fff;
 }
 
-/* TIENDA */
+.bio-text {
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #000;
+  color: #fff;
+}
+
+.text-bio-01 {
+  padding: 1rem 1rem 0 1rem;
+}
+
+.text-bio-02 {
+  padding: 0 1rem 0 1rem;
+}
 
 .tienda-contenido {
-  background-color: #cccccc;
+  background-image: linear-gradient(#fff, #c4c4c4);
+}
+
+.subtitle {
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
 }
 
 .tienda-container {
@@ -271,86 +295,45 @@ table tr th {
   transform: translateY(2px);
 }
 
-/* CONTACTO */
-
-.title-page-contact {
-  padding: 5rem 0 1rem 1rem;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: bold;
-}
-
-.contact-container {
+table {
+  padding: 2rem 2rem 2rem 2rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  flex-direction: column;
-  min-height: 110vh;
+  min-height: 73vh;
+}
+table tr {
+  border-top: 0.25px solid #fff;
+  border-bottom: 0.25px solid #fff;
+}
+table tr th {
+  padding: 1rem 2rem 1rem 2rem;
+  text-transform: uppercase;
+  font-size: 17.6px;
   color: #fff;
-  background-image: url("../images/fondoContact.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  padding: 1rem;
 }
 
-.data-form {
+.tour-background {
+  background-image: linear-gradient(#000, #393939);
+  color: #fff;
+  min-height: 100vh;
   display: flex;
-  align-items: center;
   flex-direction: column;
-  width: 100%;
-  max-width: 25rem;
+  justify-content: space-between;
 }
 
-.data-form-textarea,
-.data-form input,
-.btn-enviar,
-.data-form label {
-  margin: 0.25rem;
-  text-transform: uppercase;
+.btn-comprar {
   font-weight: bold;
-}
-
-.data-form input,
-.data-form textarea,
-.btn-enviar {
+  color: #000;
+  background-color: #fff;
   border: 0px solid #fff;
   border-radius: 10px;
-  width: 100%;
-  padding: 0.5rem;
-  box-shadow: 5px 10px 10px rgba(82, 82, 82, 0.489);
+  padding: 0.4rem;
 }
 
-.btn-enviar {
-  height: 2.5rem;
-  color: #fff;
+.btn-comprar:hover {
   background-color: #000;
-}
-
-.hr-contact {
   color: #fff;
-  border: solid 0.5px;
-  width: 90%;
-  margin: 0.5rem 0 0.5rem;
 }
 
-/* MOBILE */
-
-@media screen and (max-width: 750px) {
-  .data-form {
-    width: 100%;
-  }
-
-  footer {
-    justify-content: center;
-    align-items: center;
-    flex-direction: column-reverse;
-  }
-
-  tr {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,46 @@
+.banner-img {
+    min-height: 100vh;
+    @include center-flex;
+    font-size: map-get($map: $font-sizes, $key: 'extra-large');
+    text-align: center;
+    font-weight: bold;
+    background-image: url("../images/bannerlvb.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: $secondary-color;
+    grid-area: banner-img;
+}
+
+.name-banner {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+}
+
+
+.bio-img {
+    display: flex;
+    padding: 2rem;
+    @include center-flex;
+    background-color: $primary-color;
+    color: $secondary-color;
+}
+
+.bio-text {
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $primary-color;
+    color: $secondary-color;
+}
+
+.text-bio-01 {
+    padding: 1rem 1rem 0 1rem;
+}
+
+.text-bio-02 {
+    padding: 0 1rem 0 1rem;
+}

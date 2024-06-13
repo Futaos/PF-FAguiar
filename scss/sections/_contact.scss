@@ -1,0 +1,76 @@
+.title-page-contact {
+    padding: 5rem 0 1rem 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 110vh;
+    color: $secondary-color;
+    background-image: url("../images/fondoContact.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 1rem;
+}
+
+.data-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 25rem;
+}
+
+
+.data-form-textarea {
+    margin: 0.25rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.data-form label {
+    @extend .data-form-textarea;
+}
+
+.btn-enviar {
+    @extend .data-form-textarea;
+}
+
+.data-form input {
+    @extend .data-form-textarea;
+}
+
+.data-form input,
+.data-form textarea,
+.btn-enviar {
+    border: 0px solid $secondary-color;
+    border-radius: 10px;
+    width: 100%;
+    padding: 0.5rem;
+    box-shadow: 5px 10px 10px rgba(82, 82, 82, 0.489);
+}
+
+.btn-enviar {
+    height: 2.5rem;
+    color: $secondary-color;
+    background-color: $primary-color;
+}
+
+.btn-enviar:active {
+    background-color: $primary-color;
+    box-shadow: 2.5px 5px 5px rgba(82, 82, 82, 0.489);
+    transform: translateY(2px);
+}
+
+.hr-contact {
+    color: $secondary-color;
+    border: solid 0.5px;
+    width: 90%;
+    margin: 0.5rem 0 0.5rem;
+}
