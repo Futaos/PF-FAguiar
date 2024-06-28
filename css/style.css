@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -28,11 +29,13 @@ img {
   .data-form {
     width: 100%;
   }
+
   footer {
     justify-content: center;
     align-items: center;
     flex-direction: column-reverse;
   }
+
   tr {
     display: flex;
     justify-content: center;
@@ -40,6 +43,7 @@ img {
     flex-direction: column;
   }
 }
+
 .navbar {
   background-color: #000;
 }
@@ -64,6 +68,10 @@ ul li a {
   align-items: center;
   background-color: #000;
   color: #fff;
+}
+
+.footer ul li {
+  list-style: none;
 }
 
 .socials-footer {
@@ -113,7 +121,10 @@ ul li a {
   max-width: 25rem;
 }
 
-.data-form-textarea, .data-form input, .btn-enviar, .data-form label {
+.data-form-textarea,
+.data-form input,
+.btn-enviar,
+.data-form label {
   margin: 0.25rem;
   text-transform: uppercase;
   font-weight: bold;
@@ -161,11 +172,13 @@ ul li a {
   padding-bottom: 2rem;
   width: 100%;
 }
+
 .albums div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .albums div iframe {
   margin: 1rem;
   width: auto;
@@ -302,10 +315,12 @@ table {
   align-items: center;
   min-height: 73vh;
 }
+
 table tr {
   border-top: 0.25px solid #fff;
   border-bottom: 0.25px solid #fff;
 }
+
 table tr th {
   padding: 1rem 2rem 1rem 2rem;
   text-transform: uppercase;

@@ -9,6 +9,10 @@
     color: $secondary-color;
 }
 
+.footer ul li {
+    list-style: none;
+}
+
 .socials-footer {
     @include center-flex;
     margin: 0;
